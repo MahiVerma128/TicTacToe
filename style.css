@@ -4,21 +4,43 @@
     background-color: #d68fd6;
 }
 
-main {
+.main-cls {
     text-align: center;
+    position: relative;
 }
 
-main h1 {
+.main-cls h1 {
     font-size: 44px;
-    padding: 20px 0;
+   margin-top: 48px;
 }
-
+@media screen and (max-width: 650px){
+    .main-cls h1 {
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .main-cls h1 {
+        font-size: 28px;
+    }
+}
 .container {
     text-align: center;
     height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 750px){
+    .container{
+        height: 52vh;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .container{
+        height: 45vh;
+    }
 }
 
 .game {
@@ -31,11 +53,17 @@ main h1 {
     width: 60vmin;
     gap: 18px;
 }
-
+@media  screen and (max-width: 750px) {
+   .game{
+    height: 50vmin;
+        width: 50vmin;
+        gap: 9px;
+   }
+}
 .box {
     background-color: white;
     color: #464f51;
-    font-size: 90px;
+    font-size: 87px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,8 +72,23 @@ main h1 {
     border-radius: 12px;
     border: none;
     box-shadow: 0px 0 0.6rem 0px;
+    cursor: pointer;
 }
 
+@media screen and (max-width: 750px) {
+    .box{
+        font-size: 46px;
+        height: 13vmin;
+        width: 13vmin;
+    }
+}
+@media screen and (max-width: 450px) {
+    .box{
+        font-size: 26px;
+        height: 13vmin;
+        width: 13vmin;
+    }
+}
 .rest-btn {
     background-color: #000009;
     color: white;
@@ -54,14 +97,29 @@ main h1 {
     border: none;
     border-radius: 28px;
     margin-top: 16px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.msg-container {
+@media screen and (max-width: 650px) {
+    .rest-btn {
+        font-size: 18px;
+        padding: 8px 17px;
+        margin-top: 0;
+    }
+}
+    
+.msg-container{
+    background-color: #d68fd600;
     text-align: center;
+    position: sticky;
+    top: 42%;
+    z-index: 1;
 }
 
 .msg {
-    font-size: 52px;
+    font-size: 43px;
+    background-color: #d68fd600;
 }
 
 .new-btn {
@@ -71,8 +129,17 @@ main h1 {
     padding: 18px 28px;
     font-size: 22px;
     border-radius: 30px;
+    cursor: pointer;
 }
 
+/* Add your styles here */
 .hide {
     display: none;
 }
+
+.remove {
+    opacity: 0.3; /* or any other style to indicate removal */
+    pointer-events: none;
+   
+}
+
