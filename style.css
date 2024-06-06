@@ -37,7 +37,7 @@
     }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 420px){
     .container{
         height: 45vh;
     }
@@ -55,8 +55,8 @@
 }
 @media  screen and (max-width: 750px) {
    .game{
-    height: 50vmin;
-        width: 50vmin;
+    height: 55vmin;
+        width: 55vmin;
         gap: 9px;
    }
 }
@@ -69,7 +69,7 @@
     justify-content: center;
     height: 18vmin;
     width: 18vmin;
-    border-radius: 12px;
+    border-radius: 24px;
     border: none;
     box-shadow: 0px 0 0.6rem 0px;
     cursor: pointer;
@@ -77,16 +77,11 @@
 
 @media screen and (max-width: 750px) {
     .box{
-        font-size: 46px;
-        height: 13vmin;
-        width: 13vmin;
-    }
-}
-@media screen and (max-width: 450px) {
-    .box{
         font-size: 26px;
-        height: 13vmin;
-        width: 13vmin;
+        border-radius: 10px;
+        box-shadow: 0px 0 0.4rem 0px;
+        height: 16vmin;
+        width: 16vmin;
     }
 }
 .rest-btn {
@@ -113,7 +108,7 @@
     background-color: #d68fd600;
     text-align: center;
     position: sticky;
-    top: 42%;
+    top: 30%;
     z-index: 1;
 }
 
@@ -138,7 +133,7 @@
 }
 
 .remove {
-    opacity: 0.3; /* or any other style to indicate removal */
+    opacity: 0.1; /* or any other style to indicate removal */
     pointer-events: none;
    
 }
