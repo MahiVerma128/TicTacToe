@@ -16,6 +16,7 @@
 @media screen and (max-width: 650px){
     .main-cls h1 {
         font-size: 35px;
+        margin-top: 48px;
     }
 }
 @media screen and (max-width: 400px) {
@@ -76,6 +77,14 @@
 }
 
 @media screen and (max-width: 750px) {
+    .box{
+        font-size: 65px;
+        border-radius: 15px;
+        height: 16vmin;
+        width: 16vmin;
+    }
+}
+@media screen and (max-width: 550px) {
     .box{
         font-size: 26px;
         border-radius: 10px;
