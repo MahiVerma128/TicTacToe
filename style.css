@@ -11,19 +11,22 @@
 
 .main-cls h1 {
     font-size: 44px;
-   margin-top: 48px;
+    margin-top: 48px;
 }
-@media screen and (max-width: 650px){
+
+@media screen and (max-width: 650px) {
     .main-cls h1 {
         font-size: 35px;
         margin-top: 48px;
     }
 }
+
 @media screen and (max-width: 400px) {
     .main-cls h1 {
         font-size: 28px;
     }
 }
+
 .container {
     text-align: center;
     height: 70vh;
@@ -32,14 +35,9 @@
     justify-content: center;
 }
 
-@media screen and (max-width: 750px){
-    .container{
-        height: 52vh;
-    }
-}
 
-@media screen and (max-width: 420px){
-    .container{
+@media screen and (max-width: 420px) {
+    .container {
         height: 45vh;
     }
 }
@@ -54,13 +52,7 @@
     width: 60vmin;
     gap: 18px;
 }
-@media  screen and (max-width: 750px) {
-   .game{
-    height: 55vmin;
-        width: 55vmin;
-        gap: 9px;
-   }
-}
+
 .box {
     background-color: white;
     color: #464f51;
@@ -76,16 +68,8 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 750px) {
-    .box{
-        font-size: 65px;
-        border-radius: 15px;
-        height: 16vmin;
-        width: 16vmin;
-    }
-}
 @media screen and (max-width: 550px) {
-    .box{
+    .box {
         font-size: 26px;
         border-radius: 10px;
         box-shadow: 0px 0 0.4rem 0px;
@@ -93,6 +77,7 @@
         width: 16vmin;
     }
 }
+
 .rest-btn {
     background-color: #000009;
     color: white;
@@ -112,8 +97,8 @@
         margin-top: 0;
     }
 }
-    
-.msg-container{
+
+.msg-container {
     background-color: #d68fd600;
     text-align: center;
     position: sticky;
@@ -142,8 +127,27 @@
 }
 
 .remove {
-    opacity: 0.1; /* or any other style to indicate removal */
+    opacity: 0.1;
+    /* or any other style to indicate removal */
     pointer-events: none;
-   
+
 }
 
+@media screen and (max-width: 750px) {
+    .container {
+        height: 52vh;
+    }
+
+    .game {
+        height: 55vmin;
+        width: 55vmin;
+        gap: 9px;
+    }
+
+    .box {
+        font-size: 65px;
+        border-radius: 15px;
+        height: 16vmin;
+        width: 16vmin;
+    }
+}
